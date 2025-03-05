@@ -2,7 +2,7 @@ Project Name: RePlate
 Team Name: Team 17  
 Team Members: (name, github)  
 Skye Iley, skye-iley  
-Silvana Mendoza Olarte, SilvanaMendozaOlarte
+Silvana Mendoza Olarte, SilvanaMendozaOlarte  
 Maya Kandeshwarath, mgkandeshwarath
 [Teammates here]  
 
