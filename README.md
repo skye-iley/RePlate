@@ -4,8 +4,7 @@ Team Members: (name, github)
 Skye Iley, skye-iley  
 Silvana Mendoza Olarte, SilvanaMendozaOlarte  
 Maya Kandeshwarath, mgkandeshwarath
-Taneesha Bollumpally, tannneer
-[Teammates here]  
+Taneesha Bollumpally, tannneer  
 
 
 Overview:  
