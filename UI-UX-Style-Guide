@@ -1,0 +1,64 @@
+UI/UX Design and Style Guidelines Document
+----------------------------------------------
+
+
+Colors (Referencing Fluent UI Styles):
+
+Brand - Used for important elements of the screen that draw attention to our brand, such as the logo, or the home screen. Use sparingly.
+  #5FD564 - Bright Green - The primary color to plan our brand around. Used in our logo and important UI features. Some variation may be allowed for contrast purposes or for indicating element focus.
+  #FFAF28 - Light Orange - Used to contrast with our primary brand's color and emphasize important UI elements.
+
+Close or Delete - Used for "negative" elements such as close or delete buttons.
+  [Red (Hex TBD)] - Red - 
+
+Typeface - Used for text on our website.
+  [TBD - make sure to take 4.5:1 contrast ratio into account for accessiblity compliance] - Dark Text - Used for when text is present against a brighter background. 
+  [TBD - make sure to take 4.5:1 contrast ratio into account for accessiblity compliance] - Bright Text - Used for when text is present against a darker background.
+
+
+Typography (Referencing Fluent UI Styles):
+
+Sizes - Our text sizes are split into [X] primary sizes. [NOTE, WE SHOULD TRY TO MAKE TEXT RESIZABLE FOR ACCESSIBILITY IF POSSIBLE]
+  Headings - 
+  Subheadings - 
+  Tab Menu -
+  Text -
+  Small Text -
+  Add/remove as necessary -
+
+Fonts - We utilize 2 fonts, chosen in order to comply with accessibility (sans-serif with clear differences in letters)
+  Headings - Rockwell
+  Subheadings (?) - ???
+  Other Text - Verdana
+
+
+Spacing, Layout and Responsive Design:
+
+TO DO - Write a short paragraph about how we lay out our program, once we have actually designed it, and how that layout works with differing screen orientations/sizes.
+
+
+Component Behavior: (what happens when you hover? What happens when you click? What happens when it's the active component? What happens when you change the value?)
+BE SURE TO INCLUDE ANY HOVER EFFECTS, TRANSITIONS, OR ANIMATIONS!!!!
+ALSO, WHEN IMPLEMENTING, BE SURE TO FOLLOW ACCESSIBILITY GUIDELINES NOTED IN THAT ISSUE. IF NEEDED, I AM [SKYE IS] AVAILABLE FOR QUESTIONS!!!
+
+Buttons - Things you click on - [Write GENERAL stuff here, that applies across all/most buttons]
+  Navigation Menu - For navigating different pages on our site -
+  Submit-type - For submitting some data to our database or performing some action from our core functionalities
+  ??? - Add as needed
+  
+Inputs - Things you put data into - [Write GENERAL stuff here, that applies across all/most Inputs]
+  Text - For inputting names, descripitions, etc - 
+    Short text - For inputting shorter text like names - 
+    Long text - for inputting full sentences/paragraphs like descriptions, etc - 
+  Number - For inputting numerical values (prices, quantities, etc.) - 
+  [Other] - [Maybe Radio buttons? Drop down menus? add if we use them.] - 
+
+
+Accessibility:
+  While designing, we did our best to follow WCAG guidelines. Specifically, we took the following guidelines into account
+    - [LIST HERE, DEPENDING ON WHAT WE ACTUALLY USE]
+
+  
+    
+
+
