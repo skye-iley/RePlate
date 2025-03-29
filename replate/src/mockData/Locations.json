@@ -1,0 +1,15 @@
+{
+    "locations": [
+        {
+            "index": 0,
+            "name": "Emily's House",
+            "address": {
+                "streetAdd": "15 Forest Dr",
+                "city": "Amherst",
+                "state": "MA",
+                "zipCode": "01003"
+            },
+            "businessType": "restaurant"
+        }
+    ]
+}

@@ -1,0 +1,12 @@
+{
+    "stock": [
+        {
+            "index": 0,
+            "item": "chicken",
+            "category": "meat",
+            "amount": 15,
+            "dateAdded": "03/23/2025",
+            "expirationDate": "04/04/2025"
+        }
+    ]
+}
