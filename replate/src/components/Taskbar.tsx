@@ -12,9 +12,9 @@ const Taskbar = () =>{
     return(
         <div className = 'Taskbar'>
             <div className="name_logo">
-                <p>
-                    RePlate <img src="./src/assets/react.svg" alt="Placeholder Logo" class="inline"></img>
-                </p>
+                <h1>
+                    RePlate <img src="./src/assets/RePlate_Logo.png" alt="Placeholder Logo"></img>
+                </h1>
                 
             </div>
             <div className="home_button">
