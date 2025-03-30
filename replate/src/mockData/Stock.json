@@ -1,12 +1,84 @@
 {
-    "stock": [
-        {
-            "locationIndex": 0,
-            "item": "chicken",
-            "category": "meat",
-            "amount": 15,
-            "dateAdded": "03/23/2025",
-            "expirationDate": "04/04/2025"
-        }
-    ]
+  "stock": [
+    {
+      "locationIndex": 0,
+      "item": "peas",
+      "category": "vegetable",
+      "amount": 4,
+      "dateAdded": "2025-03-29T15:06:59.859Z",
+      "expirationDate": "2025-03-31T03:23:57.855Z"
+    },
+    {
+      "locationIndex": 0,
+      "item": "polenta",
+      "category": "other",
+      "amount": 4,
+      "dateAdded": "2025-03-30T06:34:36.947Z",
+      "expirationDate": "2025-03-30T22:00:10.454Z"
+    },
+    {
+      "locationIndex": 2,
+      "item": "snowpea",
+      "category": "fruit",
+      "amount": 10,
+      "dateAdded": "2025-03-29T20:38:18.100Z",
+      "expirationDate": "2025-03-30T10:48:29.771Z"
+    },
+    {
+      "locationIndex": 1,
+      "item": "cos lettuce",
+      "category": "vegetable",
+      "amount": 16,
+      "dateAdded": "2025-03-29T14:24:52.038Z",
+      "expirationDate": "2025-03-30T12:37:34.708Z"
+    },
+    {
+      "locationIndex": 2,
+      "item": "calamari",
+      "category": "other",
+      "amount": 18,
+      "dateAdded": "2025-03-29T20:13:07.788Z",
+      "expirationDate": "2025-03-30T14:01:19.540Z"
+    },
+    {
+      "locationIndex": 1,
+      "item": "crocodile",
+      "category": "meat",
+      "amount": 19,
+      "dateAdded": "2025-03-30T03:16:16.797Z",
+      "expirationDate": "2025-03-31T01:13:44.527Z"
+    },
+    {
+      "locationIndex": 1,
+      "item": "cranberry",
+      "category": "fruit",
+      "amount": 1,
+      "dateAdded": "2025-03-29T14:47:56.196Z",
+      "expirationDate": "2025-03-30T09:28:14.859Z"
+    },
+    {
+      "locationIndex": 0,
+      "item": "dried chinese broccoli",
+      "category": "vegetable",
+      "amount": 2,
+      "dateAdded": "2025-03-30T04:04:14.027Z",
+      "expirationDate": "2025-03-31T03:13:36.462Z"
+    },
+    {
+      "locationIndex": 1,
+      "item": "anise star",
+      "category": "spice",
+      "amount": 18,
+      "dateAdded": "2025-03-29T13:52:59.475Z",
+      "expirationDate": "2025-03-30T19:21:58.173Z"
+    },
+    {
+      "locationIndex": 0,
+      "item": "pomegranate",
+      "category": "fruit",
+      "amount": 16,
+      "dateAdded": "2025-03-29T10:18:29.908Z",
+      "expirationDate": "2025-03-30T16:19:05.336Z"
+    }
+  ]
 }

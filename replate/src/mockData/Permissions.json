@@ -1,9 +1,29 @@
 {
-    "permissions": [
-        {
-            "user": "johnSmith",
-            "location": 0,
-            "permission": "admin"
-        }
-    ]
+  "permissions": [
+    {
+      "user": "Cydney_Koss",
+      "locationIndex": 0,
+      "permission": "admin"
+    },
+    {
+      "user": "Violet_Littel3",
+      "locationIndex": 1,
+      "permission": "admin"
+    },
+    {
+      "user": "Okey_Marks",
+      "locationIndex": 2,
+      "permission": "admin"
+    },
+    {
+      "user": "Okey_Marks",
+      "locationIndex": 0,
+      "permission": "vu"
+    },
+    {
+      "user": "Betty.Stroman11",
+      "locationIndex": 0,
+      "permission": "vcud"
+    }
+  ]
 }

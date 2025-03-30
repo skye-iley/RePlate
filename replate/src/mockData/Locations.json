@@ -1,15 +1,37 @@
 {
-    "locations": [
-        {
-            "index": 0,
-            "name": "Emily's House",
-            "address": {
-                "streetAdd": "15 Forest Dr",
-                "city": "Amherst",
-                "state": "MA",
-                "zipCode": "01003"
-            },
-            "businessType": "restaurant"
-        }
-    ]
+  "locations": [
+    {
+      "index": 0,
+      "name": "Robel, Reilly and Luettgen",
+      "address": {
+        "streetAddress": "291 Lowe Junction",
+        "city": "Ernatown",
+        "state": "Utah",
+        "zipCode": "25281"
+      },
+      "businessType": "Kids"
+    },
+    {
+      "index": 1,
+      "name": "Kertzmann - Kuphal",
+      "address": {
+        "streetAddress": "84514 E Jackson Street",
+        "city": "East Zeldaland",
+        "state": "Missouri",
+        "zipCode": "11361"
+      },
+      "businessType": "Music"
+    },
+    {
+      "index": 2,
+      "name": "Funk, Mills and Miller",
+      "address": {
+        "streetAddress": "2018 Glover Course",
+        "city": "Pearl City",
+        "state": "Virginia",
+        "zipCode": "84877-6558"
+      },
+      "businessType": "Books"
+    }
+  ]
 }
