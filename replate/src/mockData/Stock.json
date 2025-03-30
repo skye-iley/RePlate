@@ -2,7 +2,6 @@
     "stock": [
         {
             "locationIndex": 0,
-            "index": 0,
             "item": "chicken",
             "category": "meat",
             "amount": 15,
