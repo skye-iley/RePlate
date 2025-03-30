@@ -2,6 +2,7 @@
     "donationRequests": [
         {
             "index": 0,
+            "locationIndex": 0,
             "item": "cucumbers",
             "category": "produce",
             "amount": 5,

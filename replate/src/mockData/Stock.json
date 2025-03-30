@@ -1,7 +1,7 @@
 {
     "stock": [
         {
-            "index": 0,
+            "locationIndex": 0,
             "item": "chicken",
             "category": "meat",
             "amount": 15,
