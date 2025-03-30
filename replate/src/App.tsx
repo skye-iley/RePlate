@@ -1,30 +1,20 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
-
-
+import { Route, Routes } from 'react-router-dom'
+import Taskbar from './components/Taskbar'
+import StatsAndHistoryPage from './pages/stats_and_history'
+import HomePage from './pages/home'
 
 function App() {
-  const [count, setCount] = useState(0)
-
-  const doNothing = () => {
-    void(0);
-  }
   // Array to hold nearby locations
   
-  
   return (
-    <>
-      <div className = "Taskbar">
-        
-      </div>
-      <h1>HEADER</h1>
-      
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
+    <div>
+      <Taskbar />
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/stats" element={<StatsAndHistoryPage />} />
+      </Routes>
+    </div>
   )
 }
 
