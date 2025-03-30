@@ -2,7 +2,7 @@
     "permissions": [
         {
             "user": "johnSmith",
-            "location": "Emily's House",
+            "location": 0,
             "permission": "admin"
         }
     ]
