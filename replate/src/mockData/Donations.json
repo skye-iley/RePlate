@@ -1,0 +1,14 @@
+{
+    "donations": [
+        {
+            "index": 0,
+            "user": "johnSmith",
+            "location": 0,
+            "item": "cucumbers",
+            "category": "produce",
+            "amount": 5,
+            "dateDonated": "03/28/2025",
+            "donationRequest": 0
+        }
+    ]
+}
