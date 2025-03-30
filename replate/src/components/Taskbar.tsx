@@ -1,4 +1,5 @@
 //location will be in a context
+import { Link } from 'react-router-dom';
 import './Taskbar.css'
 
 const Taskbar = () =>{
@@ -19,12 +20,12 @@ const Taskbar = () =>{
             </div>
             <div className="home_button">
                 <button onClick={doNothing}>
-                    Home
+                    <Link to={'/'}>Home</Link>
                 </button>
             </div>
             <div className="stats_button">
                 <button onClick={doNothing}>
-                    Your History
+                    <Link to={'/stats'}>Your History</Link>
                 </button>
             </div>
         </div>
