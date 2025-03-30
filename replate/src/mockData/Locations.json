@@ -2,36 +2,36 @@
   "locations": [
     {
       "index": 0,
-      "name": "Robel, Reilly and Luettgen",
+      "name": "Haley - Hoeger",
       "address": {
-        "streetAddress": "291 Lowe Junction",
-        "city": "Ernatown",
-        "state": "Utah",
-        "zipCode": "25281"
+        "streetAddress": "31717 Chestnut Grove",
+        "city": "New Mackfort",
+        "state": "Florida",
+        "zipCode": "91242"
       },
-      "businessType": "Kids"
+      "businessType": "Computers"
     },
     {
       "index": 1,
-      "name": "Kertzmann - Kuphal",
+      "name": "Gutkowski, Schiller and Lind",
       "address": {
-        "streetAddress": "84514 E Jackson Street",
-        "city": "East Zeldaland",
-        "state": "Missouri",
-        "zipCode": "11361"
+        "streetAddress": "311 Jerel Burgs",
+        "city": "Brakusmouth",
+        "state": "Washington",
+        "zipCode": "29422"
       },
-      "businessType": "Music"
+      "businessType": "Electronics"
     },
     {
       "index": 2,
-      "name": "Funk, Mills and Miller",
+      "name": "Runolfsson Group",
       "address": {
-        "streetAddress": "2018 Glover Course",
-        "city": "Pearl City",
-        "state": "Virginia",
-        "zipCode": "84877-6558"
+        "streetAddress": "90021 Elena Mount",
+        "city": "New Giovannistead",
+        "state": "Nevada",
+        "zipCode": "03237"
       },
-      "businessType": "Books"
+      "businessType": "Computers"
     }
   ]
 }

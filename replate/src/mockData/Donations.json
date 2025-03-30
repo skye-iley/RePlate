@@ -2,27 +2,27 @@
   "donations": [
     {
       "index": 0,
-      "user": "Okey_Marks",
-      "locationIndex": 0,
-      "amount": 8,
-      "dateDonated": "2025-03-29T23:24:31.442Z",
-      "donationRequest": 4
-    },
-    {
-      "index": 1,
-      "user": "Cydney_Koss",
-      "locationIndex": 0,
-      "amount": 7,
-      "dateDonated": "2025-03-29T21:49:49.795Z",
+      "fulfillingLocation": 1,
+      "requestingLocation": 0,
+      "amount": 16,
+      "dateDonated": "2025-03-30T10:19:40.279Z",
       "donationRequest": 1
     },
     {
-      "index": 2,
-      "user": "Okey_Marks",
-      "locationIndex": 1,
-      "amount": 12,
-      "dateDonated": "2025-03-29T13:42:33.191Z",
+      "index": 1,
+      "fulfillingLocation": 1,
+      "requestingLocation": 2,
+      "amount": 1,
+      "dateDonated": "2025-03-30T06:06:15.078Z",
       "donationRequest": 3
+    },
+    {
+      "index": 2,
+      "fulfillingLocation": 0,
+      "requestingLocation": 0,
+      "amount": 5,
+      "dateDonated": "2025-03-30T20:47:43.658Z",
+      "donationRequest": 0
     }
   ]
 }

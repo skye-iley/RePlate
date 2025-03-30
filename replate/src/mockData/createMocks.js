@@ -21,15 +21,39 @@ const donationLocations = []
 for(let i = 0; i < USERS; i++){
     const first = faker.person.firstName();
     const last = faker.person.lastName();
-    usersObj.users.push({username: faker.internet.username({firstName: first, lastName: last}), email: faker.internet.email({firstName: first, lastName: last}), password: faker.internet.password()})
+    usersObj.users.push(
+        {
+            username: faker.internet.username({firstName: first, lastName: last}), 
+            email: faker.internet.email({firstName: first, lastName: last}), 
+            password: faker.internet.password()
+        }
+    );
 }
 
 for(let j = 0; j < LOCATIONS; j++){
-    locationsObj.locations.push({index: j, name: faker.company.name(), address: {streetAddress: faker.location.streetAddress(), city: faker.location.city(), state: faker.location.state(), zipCode: faker.location.zipCode()}, businessType: faker.commerce.department()})
+    locationsObj.locations.push(
+        {
+            index: j, 
+            name: faker.company.name(), 
+            address: {
+                streetAddress: faker.location.streetAddress(), 
+                city: faker.location.city(), state: faker.location.state(), 
+                zipCode: faker.location.zipCode()
+            }, 
+            businessType: faker.commerce.department()
+        }
+    );
 }
 
 for(let k = 0; k < LOCATIONS; k++){
-    permissionsObj.permissions.push({user: usersObj.users[faker.number.int({min: 0, max: USERS - 1})].username, locationIndex: k, permission: "admin"})
+    permissionsObj.permissions.push(
+        {
+            index: k, 
+            user: usersObj.users[faker.number.int({min: 0, max: USERS - 1})].username, 
+            locationIndex: k, 
+            permission: "admin"
+        }
+    );
 }
 for(let l = 0; l < PERMISSIONS; l++){
     // view
@@ -46,7 +70,14 @@ for(let l = 0; l < PERMISSIONS; l++){
             perm += "d";
         }
     }
-    permissionsObj.permissions.push({user: usersObj.users[faker.number.int({min: 0, max: USERS - 1})].username, locationIndex: faker.number.int({min: 0, max: LOCATIONS - 1}), permission: perm})
+    permissionsObj.permissions.push(
+        {
+            index: LOCATIONS + l, 
+            user: usersObj.users[faker.number.int({min: 0, max: USERS - 1})].username, 
+            locationIndex: faker.number.int({min: 0, max: LOCATIONS - 1}), 
+            permission: perm
+        }
+    );
 }
 
 for(let m = 0; m < DONATIONREQUESTS; m++){
@@ -76,14 +107,33 @@ for(let m = 0; m < DONATIONREQUESTS; m++){
     }
     const location = faker.number.int({min: 0, max: LOCATIONS - 1});
     donationLocations.push(location)
-    donationRequestsObj.donationRequests.push({index: m, locationIndex: location, item: item, category: category, amount: faker.number.int({min:1, max:20}), dateRequested: faker.date.past(), accepted: faker.datatype.boolean()})
+    donationRequestsObj.donationRequests.push(
+        {
+            index: m, 
+            requestingLocation: location, 
+            item: item, 
+            category: category, 
+            amount: faker.number.int({min:1, max:20}), 
+            dateRequested: faker.date.past(), 
+            accepted: faker.datatype.boolean()
+        }
+    );
 }
 
 for(let n = 0; n < DONATIONS; n++){
     let rand = faker.number.int({min: 0, max: DONATIONREQUESTS - 1});
-    
     donationRequestsObj.donationRequests[rand].accepted = true;
-    donationsObj.donations.push({index: n, user: usersObj.users[faker.number.int({min: 0, max: USERS - 1})].username, locationIndex: donationLocations[rand], amount: faker.number.int({min: 1, max: 20}), dateDonated: faker.date.recent(), donationRequest: rand})
+
+    donationsObj.donations.push(
+        {
+            index: n, 
+            fulfillingLocation: faker.number.int({min: 0, max: LOCATIONS - 1}), 
+            requestingLocation: donationLocations[rand], 
+            amount: faker.number.int({min: 1, max: 20}), 
+            dateDonated: faker.date.recent(), 
+            donationRequest: rand
+        }
+    );
 }
 
 for(let p = 0; p < STOCK; p++){
@@ -111,7 +161,17 @@ for(let p = 0; p < STOCK; p++){
         item = faker.food.ingredient();
         category = "other";
     }
-    stockObj.stock.push({locationIndex: faker.number.int({min: 0, max: LOCATIONS - 1}), item: item, category: category, amount: faker.number.int({min: 1, max: 20}), dateAdded: faker.date.recent(), expirationDate: faker.date.soon()})
+    stockObj.stock.push(
+        {
+            index: p, 
+            locationIndex: faker.number.int({min: 0, max: LOCATIONS - 1}), 
+            item: item, 
+            category: category, 
+            amount: faker.number.int({min: 1, max: 20}), 
+            dateAdded: faker.date.recent(), 
+            expirationDate: faker.date.soon()
+        }
+    );
 }
 
 
@@ -132,5 +192,4 @@ console.log(donationsObj, donationsJson)
 fs.writeFile("./src/mockData/Donations.json", donationsJson, e => {e ? console.log("An error occured") : console.log("Donations sucessfully uploaded")})
 
 const stockJson = JSON.stringify(stockObj, null, 2);
-console.log(stockObj, stockJson)
 fs.writeFile("./src/mockData/Stock.json", stockJson, e => {e ? console.log("An error occured") : console.log("Stock sucessfully uploaded")})

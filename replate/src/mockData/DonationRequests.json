@@ -2,47 +2,47 @@
   "donationRequests": [
     {
       "index": 0,
-      "locationIndex": 0,
-      "item": "eggplant",
-      "category": "other",
-      "amount": 6,
-      "dateRequested": "2024-09-24T00:06:57.579Z",
+      "requestingLocation": 0,
+      "item": "mango",
+      "category": "fruit",
+      "amount": 9,
+      "dateRequested": "2024-07-05T01:06:53.544Z",
       "accepted": true
     },
     {
       "index": 1,
-      "locationIndex": 0,
-      "item": "blueberries",
-      "category": "other",
-      "amount": 9,
-      "dateRequested": "2024-08-27T18:56:17.762Z",
+      "requestingLocation": 0,
+      "item": "jerusalem artichoke",
+      "category": "vegetable",
+      "amount": 2,
+      "dateRequested": "2024-05-15T18:38:46.976Z",
       "accepted": true
     },
     {
       "index": 2,
-      "locationIndex": 0,
-      "item": "cardamom",
+      "requestingLocation": 0,
+      "item": "pot marjoram",
       "category": "spice",
-      "amount": 1,
-      "dateRequested": "2024-06-23T02:30:05.469Z",
+      "amount": 16,
+      "dateRequested": "2025-01-03T04:59:05.018Z",
       "accepted": false
     },
     {
       "index": 3,
-      "locationIndex": 1,
-      "item": "camellia tea oil",
-      "category": "other",
-      "amount": 18,
-      "dateRequested": "2025-03-21T05:01:23.672Z",
+      "requestingLocation": 2,
+      "item": "mace",
+      "category": "spice",
+      "amount": 14,
+      "dateRequested": "2024-11-18T01:30:49.419Z",
       "accepted": true
     },
     {
       "index": 4,
-      "locationIndex": 0,
-      "item": "china star",
-      "category": "spice",
-      "amount": 17,
-      "dateRequested": "2024-06-13T18:14:40.285Z",
+      "requestingLocation": 2,
+      "item": "pork",
+      "category": "meat",
+      "amount": 19,
+      "dateRequested": "2025-03-22T01:35:12.399Z",
       "accepted": true
     }
   ]
