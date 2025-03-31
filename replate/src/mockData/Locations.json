@@ -1,15 +1,37 @@
 {
-    "locations": [
-        {
-            "index": 0,
-            "name": "Emily's House",
-            "address": {
-                "streetAdd": "15 Forest Dr",
-                "city": "Amherst",
-                "state": "MA",
-                "zipCode": "01003"
-            },
-            "businessType": "restaurant"
-        }
-    ]
+  "locations": [
+    {
+      "index": 0,
+      "name": "Haley - Hoeger",
+      "address": {
+        "streetAddress": "31717 Chestnut Grove",
+        "city": "New Mackfort",
+        "state": "Florida",
+        "zipCode": "91242"
+      },
+      "businessType": "Computers"
+    },
+    {
+      "index": 1,
+      "name": "Gutkowski, Schiller and Lind",
+      "address": {
+        "streetAddress": "311 Jerel Burgs",
+        "city": "Brakusmouth",
+        "state": "Washington",
+        "zipCode": "29422"
+      },
+      "businessType": "Electronics"
+    },
+    {
+      "index": 2,
+      "name": "Runolfsson Group",
+      "address": {
+        "streetAddress": "90021 Elena Mount",
+        "city": "New Giovannistead",
+        "state": "Nevada",
+        "zipCode": "03237"
+      },
+      "businessType": "Computers"
+    }
+  ]
 }
