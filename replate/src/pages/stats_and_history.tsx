@@ -1,9 +1,10 @@
 // stats will be list
+import Statistics_Tracker from "../components/Statistics_Tracker"
 
 const StatsAndHistoryPage = () => {
     return(
         <div>
-            <p>test</p>
+            <Statistics_Tracker />
         </div>
     )
 }
