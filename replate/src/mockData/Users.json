@@ -1,9 +1,29 @@
 {
-    "users": [
-        {
-            "username": "johnSmith",
-            "email": "john.smith@gmail.com",
-            "password": "Password123"
-        }
-    ]
+  "users": [
+    {
+      "username": "Jimmy_Sauer68",
+      "email": "Jimmy.Sauer40@gmail.com",
+      "password": "6ecCtcv0lyjlz2B"
+    },
+    {
+      "username": "Cletus_Grady",
+      "email": "Cletus.Grady40@yahoo.com",
+      "password": "pmTsCLSegFIiCwW"
+    },
+    {
+      "username": "Carlee_Lueilwitz",
+      "email": "Carlee.Lueilwitz87@yahoo.com",
+      "password": "4PuFI8iKBNYGP2x"
+    },
+    {
+      "username": "Johnathon_Shanahan",
+      "email": "Johnathon_Shanahan@gmail.com",
+      "password": "0UymrQbs3uI8_MQ"
+    },
+    {
+      "username": "Julie.Metz69",
+      "email": "Julie_Metz@gmail.com",
+      "password": "yXvdFeG0QIa1Bu5"
+    }
+  ]
 }

@@ -27,6 +27,11 @@ const Taskbar = () =>{
                     <button onClick={doNothing}>Your History</button>
                 </Link>
             </div>
+            <div className="donate_button">
+                <button onClick={doNothing}>
+                    <Link to={'/donate'}>Donate</Link>
+                </button>
+            </div>
         </div>
     )
 }

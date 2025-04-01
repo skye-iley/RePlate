@@ -1,9 +1,34 @@
 {
-    "permissions": [
-        {
-            "user": "johnSmith",
-            "location": 0,
-            "permission": "admin"
-        }
-    ]
+  "permissions": [
+    {
+      "index": 0,
+      "user": "Julie.Metz69",
+      "locationIndex": 0,
+      "permission": "admin"
+    },
+    {
+      "index": 1,
+      "user": "Cletus_Grady",
+      "locationIndex": 1,
+      "permission": "admin"
+    },
+    {
+      "index": 2,
+      "user": "Jimmy_Sauer68",
+      "locationIndex": 2,
+      "permission": "admin"
+    },
+    {
+      "index": 3,
+      "user": "Carlee_Lueilwitz",
+      "locationIndex": 1,
+      "permission": "vu"
+    },
+    {
+      "index": 4,
+      "user": "Jimmy_Sauer68",
+      "locationIndex": 0,
+      "permission": "vu"
+    }
+  ]
 }
