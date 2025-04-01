@@ -1,6 +1,6 @@
-import { ColumnHelper, createColumnHelper, flexRender, getCoreRowModel, useReactTable } from "@tanstack/react-table";
+import { createColumnHelper, flexRender, getCoreRowModel, useReactTable } from "@tanstack/react-table";
 
-//current location will be in a context
+// placeholder TODO: current location will be in a context
 
 interface Address {
     street: string;
@@ -54,54 +54,59 @@ const placesList: NearbyDonations[] = [{
 ]
 
 //tanstack functions
-const columnHelper = createColumnHelper<NearbyDonations>()
+// TanStack Table Setup
+const columnHelper = createColumnHelper<NearbyDonations>();
 
 const columns = [
-    columnHelper.accessor('name', {
-    header: 'Donator',
-    cell: props => props.getValue().toUpperCase(),
+    columnHelper.accessor("name", {
+        header: "Donator",
+        cell: (props) => <p>{props.getValue()}</p>
     }),
-    columnHelper.accessor('lastRestocked', {
-    header: 'Last Restocked',
+    columnHelper.accessor("lastRestocked", {
+        header: "Last Restocked",
     }),
-    columnHelper.accessor('address.city', {
-    header: 'City',
+    columnHelper.accessor("address.city", {
+        header: "City",
     }),
-    columnHelper.accessor(row => `${row.name}`, {
-    header: 'Distance',
+    columnHelper.accessor((row) => `${row.name}`, {
+        header: "Distance",
     }),
-]
-const table = useReactTable({data: placesList, columns, getCoreRowModel: getCoreRowModel()})
+];
+
 const NearbyDonationsList = () => {
-// get current location
-    return(
-        <div className="p-4 overflow-x-auto">
-        <table className="w-full border-collapse border border-gray-300">
-          <thead className="bg-gray-100">
-            {table.getHeaderGroups().map((headerGroup) => (
-              <tr key={headerGroup.id}>
-                {headerGroup.headers.map((header) => (
-                  <th key={header.id} className="p-2 border border-gray-300 text-left">
-                    {flexRender(header.column.columnDef.header, header.getContext())}
-                  </th>
-                ))}
-              </tr>
-            ))}
-          </thead>
+// placeholder TODO: get current location from context
+  const table = useReactTable({
+    data: placesList,
+    columns,
+    getCoreRowModel: getCoreRowModel(),
+  });
+  return(
+    <div>
+      <table>
+        <thead>
+          {table.getHeaderGroups().map((headerGroup) => (
+            <tr key={headerGroup.id}>
+              {headerGroup.headers.map((header) => (
+                <th key={header.id}>
+                  {flexRender(header.column.columnDef.header, header.getContext())}
+                </th>
+              ))}
+            </tr>
+          ))}
+        </thead>
           <tbody>
             {table.getRowModel().rows.map((row) => (
-              <tr key={row.id} className="hover:bg-gray-50">
+              <tr key={row.id}>
                 {row.getVisibleCells().map((cell) => (
-                  <td key={cell.id} className="p-2 border border-gray-300">
+                  <td key={cell.id}>
                     {flexRender(cell.column.columnDef.cell, cell.getContext())}
                   </td>
                 ))}
               </tr>
             ))}
           </tbody>
-        </table>
-      </div>
-    )
-
+      </table>
+    </div>
+  )
 }
 export default NearbyDonationsList
