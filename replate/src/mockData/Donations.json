@@ -1,14 +1,28 @@
 {
-    "donations": [
-        {
-            "index": 0,
-            "user": "johnSmith",
-            "locationIndex": 0,
-            "item": "cucumbers",
-            "category": "produce",
-            "amount": 5,
-            "dateDonated": "03/28/2025",
-            "donationRequest": 0
-        }
-    ]
+  "donations": [
+    {
+      "index": 0,
+      "fulfillingLocation": 1,
+      "requestingLocation": 0,
+      "amount": 16,
+      "dateDonated": "2025-03-30T10:19:40.279Z",
+      "donationRequest": 1
+    },
+    {
+      "index": 1,
+      "fulfillingLocation": 1,
+      "requestingLocation": 2,
+      "amount": 1,
+      "dateDonated": "2025-03-30T06:06:15.078Z",
+      "donationRequest": 3
+    },
+    {
+      "index": 2,
+      "fulfillingLocation": 0,
+      "requestingLocation": 0,
+      "amount": 5,
+      "dateDonated": "2025-03-30T20:47:43.658Z",
+      "donationRequest": 0
+    }
+  ]
 }

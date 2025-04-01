@@ -1,13 +1,49 @@
 {
-    "donationRequests": [
-        {
-            "index": 0,
-            "locationIndex": 0,
-            "item": "cucumbers",
-            "category": "produce",
-            "amount": 5,
-            "dateRequested": "03/27/2025",
-            "accepted": false
-        }
-    ]
+  "donationRequests": [
+    {
+      "index": 0,
+      "requestingLocation": 0,
+      "item": "mango",
+      "category": "fruit",
+      "amount": 9,
+      "dateRequested": "2024-07-05T01:06:53.544Z",
+      "accepted": true
+    },
+    {
+      "index": 1,
+      "requestingLocation": 0,
+      "item": "jerusalem artichoke",
+      "category": "vegetable",
+      "amount": 2,
+      "dateRequested": "2024-05-15T18:38:46.976Z",
+      "accepted": true
+    },
+    {
+      "index": 2,
+      "requestingLocation": 0,
+      "item": "pot marjoram",
+      "category": "spice",
+      "amount": 16,
+      "dateRequested": "2025-01-03T04:59:05.018Z",
+      "accepted": false
+    },
+    {
+      "index": 3,
+      "requestingLocation": 2,
+      "item": "mace",
+      "category": "spice",
+      "amount": 14,
+      "dateRequested": "2024-11-18T01:30:49.419Z",
+      "accepted": true
+    },
+    {
+      "index": 4,
+      "requestingLocation": 2,
+      "item": "pork",
+      "category": "meat",
+      "amount": 19,
+      "dateRequested": "2025-03-22T01:35:12.399Z",
+      "accepted": true
+    }
+  ]
 }
