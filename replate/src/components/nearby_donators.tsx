@@ -71,8 +71,9 @@ const columns = [
     header: 'Distance',
     }),
 ]
-const table = useReactTable({data: placesList, columns, getCoreRowModel: getCoreRowModel()})
+
 const NearbyDonationsList = () => {
+  const table = useReactTable({data: placesList, columns, getCoreRowModel: getCoreRowModel()})
 // get current location
     return(
         <div className="p-4 overflow-x-auto">
