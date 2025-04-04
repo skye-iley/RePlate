@@ -8,55 +8,67 @@ Brand - Used for important elements of the screen that draw attention to our bra
   #5FD564 - Bright Green - The primary color to plan our brand around. Used in our logo and important UI features. Some variation may be allowed for contrast purposes or for indicating element focus.
   #FFAF28 - Light Orange - Used to contrast with our primary brand's color and emphasize important UI elements.
 
-Close or Delete - Used for "negative" elements such as close or delete buttons.
-  [Red (Hex TBD)] - Red - 
-
 Typeface - Used for text on our website.
-  [TBD - make sure to take 4.5:1 contrast ratio into account for accessiblity compliance] - Dark Text - Used for when text is present against a brighter background. 
-  [TBD - make sure to take 4.5:1 contrast ratio into account for accessiblity compliance] - Bright Text - Used for when text is present against a darker background.
+  [TBD, we haven't used brighter backgrounds so far] - Dark Text - Used for when text is present against a brighter background. 
+  #5FD564 - Bright Text - Used for when text is present against a darker background.
+  #FFAF28 - Button Bright Text - Used for text on buttons when the button is a dark color.
 
 
 Typography (Referencing Fluent UI Styles):
 
-Sizes - Our text sizes are split into [X] primary sizes. [NOTE, WE SHOULD TRY TO MAKE TEXT RESIZABLE FOR ACCESSIBILITY IF POSSIBLE]
-  Headings - 
-  Subheadings - 
-  Tab Menu -
-  Text -
-  Small Text -
-  Add/remove as necessary -
-
 Fonts - We utilize 2 fonts, chosen in order to comply with accessibility (sans-serif with clear differences in letters)
   Headings - Rockwell
-  Subheadings (?) - ???
   Other Text - Verdana
 
 
 Spacing, Layout and Responsive Design:
 
-TO DO - Write a short paragraph about how we lay out our program, once we have actually designed it, and how that layout works with differing screen orientations/sizes.
-
+For most components, we use a 1em padding, to allow a decent amount of space between the different elements, changing depending on the font size (which is usually proportional to the element size)
+As far as overall layout goes, we kept it simple - a taskbar up top that is consistent across all pages, and a central main component that is responsible for that page's primary function.
+We utilized CSS to ensure that the taskbar remains locked to the top of the screen, and the primary component remains in the center. In the future, we will add some more features with regards to responsive
+design to better work with different window sizes and orientations.
 
 Component Behavior: (what happens when you hover? What happens when you click? What happens when it's the active component? What happens when you change the value?)
 BE SURE TO INCLUDE ANY HOVER EFFECTS, TRANSITIONS, OR ANIMATIONS!!!!
 ALSO, WHEN IMPLEMENTING, BE SURE TO FOLLOW ACCESSIBILITY GUIDELINES NOTED IN THAT ISSUE. IF NEEDED, I AM [SKYE IS] AVAILABLE FOR QUESTIONS!!!
 
-Buttons - Things you click on - [Write GENERAL stuff here, that applies across all/most buttons]
+Buttons - Things you click on -
+  - on hover, buttons slightly brighten their text color, and show an outline of the same color, in order to indicate it is being hovered over.
+  - on focus (using tab), buttons display a blue outline
+  Types:
   Navigation Menu - For navigating different pages on our site -
-  Submit-type - For submitting some data to our database or performing some action from our core functionalities
-  ??? - Add as needed
+  Submit-type - For submitting some data to our database or performing some action from our core functionalities - 
   
-Inputs - Things you put data into - [Write GENERAL stuff here, that applies across all/most Inputs]
+Inputs - Things you put data into - 
+  - on hover, their outline slightly brightens 
+  - on enter, the item is focused, and the cursor is visible inside the input
+  - on focus (using tab or click), inputs display a blue outline
+  Types:
   Text - For inputting names, descripitions, etc - 
     Short text - For inputting shorter text like names - 
     Long text - for inputting full sentences/paragraphs like descriptions, etc - 
   Number - For inputting numerical values (prices, quantities, etc.) - 
-  [Other] - [Maybe Radio buttons? Drop down menus? add if we use them.] - 
+
+Selects - Selecting items from a drop-down menu - 
+  - on hover, their background slightly brightens 
+  - on enter, the background continues to be brighter, and the dropdown menu opens
+  - on focus (using tab), there is a blue outline
 
 
 Accessibility:
   While designing, we did our best to follow WCAG guidelines. Specifically, we took the following guidelines into account
-    - [LIST HERE, DEPENDING ON WHAT WE ACTUALLY USE]
+    - 1.4.3 Contrast (Minimum)
+    - 1.4.10 Reflow
+    - 1.4.11 Non-text Contrast
+    - 2.1.2 No Keyboard Trap
+    - 2.3.2 Three Flashes - Level AAA
+    - 2.4.3 Focus Order
+    - 2.4.7 Focus Visible
+    - 2.5.2 Pointer Cancellation
+    - 3.2.1 On Focus
+    - 3.2.2 On Input
+    - 3.3.2 Labels or Instructions
+
 
   
     
