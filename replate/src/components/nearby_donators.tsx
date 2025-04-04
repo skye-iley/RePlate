@@ -71,29 +71,26 @@ const columns = [
     columnHelper.accessor((row) => `${row.name}`, {
         header: "Distance",
     }),
+
 ];
 
 const NearbyDonationsList = () => {
-// placeholder TODO: get current location from context
-  const table = useReactTable({
-    data: placesList,
-    columns,
-    getCoreRowModel: getCoreRowModel(),
-  });
-  return(
-    <div>
-      <table>
-        <thead>
-          {table.getHeaderGroups().map((headerGroup) => (
-            <tr key={headerGroup.id}>
-              {headerGroup.headers.map((header) => (
-                <th key={header.id}>
-                  {flexRender(header.column.columnDef.header, header.getContext())}
-                </th>
-              ))}
-            </tr>
-          ))}
-        </thead>
+  const table = useReactTable({data: placesList, columns, getCoreRowModel: getCoreRowModel()})
+// get current location
+    return(
+        <div className="p-4 overflow-x-auto">
+        <table className="w-full border-collapse border border-gray-300">
+          <thead className="bg-gray-100">
+            {table.getHeaderGroups().map((headerGroup) => (
+              <tr key={headerGroup.id}>
+                {headerGroup.headers.map((header) => (
+                  <th key={header.id} className="p-2 border border-gray-300 text-left">
+                    {flexRender(header.column.columnDef.header, header.getContext())}
+                  </th>
+                ))}
+              </tr>
+            ))}
+          </thead>
           <tbody>
             {table.getRowModel().rows.map((row) => (
               <tr key={row.id}>
