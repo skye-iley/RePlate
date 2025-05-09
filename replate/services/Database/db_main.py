@@ -1,5 +1,6 @@
 import os
 from fastapi import FastAPI, Request
+from pydantic import BaseModel
 import asyncio
 import sqlite3
 
@@ -45,28 +46,57 @@ def insertRow(table_name, values):
 # ADD ADDITIONAL REQUESTS/CHANGES DEPENDING ON WHAT PPL NEED.
 
 
-
+class Message(BaseModel):
+    requestType: str
+    data: object
 
 # MICROSERVICE REQUEST HANDLING
 async def enrich(message: Message, request: Request):
-    if(message.requestType = "numDonations"):
-        dbName = "userDonations"
-        name = message.name
+    if (message.requestType == "numDonations"):
+        tblName = "userDonations"
+        name = message.data.name
         condition = "name = \"" + name + "\""
-        numDonations = getValuesQuery(dbName, ["COUNT(*)"], condition)[0]
+        numDonations = getValuesQuery(tblName, ["COUNT(*)"], condition)[0]
 
         return {
             numDonations
         }
-    else if (message.requestType = "checkLogin"):
+    elif (message.requestType == "numRecieved"):
+        tblName = "userTransactions"
+        name = message.data.name
+        condition = "name = \"" + name + "\""
+        numRecieved = getValuesQuery(tblName, ["COUNT(*)"], condition)[0]
+
+        return {
+            numRecieved
+        }
+    elif (message.requestType == "numVisited"):
+        tblName = "userDonations"
+        name = message.data.name
+        condition = "name = \"" + name + "\""
+        numRecieved = getValuesQuery(tblName, ["COUNT(DISTINCT Location)"], condition)[0]
+
+        return {
+            numRecieved
+        }
+    elif (message.requestType == "numPlanned"):
+        tblName = "plannedDonations"
+        name = message.data.name
+        condition = "name = \"" + name + "\""
+        numRecieved = getValuesQuery(tblName, ["COUNT(*)"], condition)[0]
+
+        return {
+            numRecieved
+        }
+    elif (message.requestType =="checkLogin"):
         table_name = "auth"
-        name = message.name
-        passwd = message.password
+        name = message.data.name
+        passwd = message.data.password
         returnVal = "CASE WHEN Password = \"" + passwd + "\" THEN true ELSE false END"
         condition = "name = \"" + name + "\""
         ans = getValuesQuery(table_name, returnVal, condition)[0]
         return { ans }
 
 
-    return null
+    return None
     
