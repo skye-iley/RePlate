@@ -1,6 +1,7 @@
 import os
 from fastapi import FastAPI, Request
 from pydantic import BaseModel
+from contextlib import asynccontextmanager
 import asyncio
 import sqlite3
 
@@ -46,10 +47,16 @@ def insertRow(table_name, values):
 # ADD ADDITIONAL REQUESTS/CHANGES DEPENDING ON WHAT PPL NEED.
 
 
+
+
+
 class Message(BaseModel):
     requestType: str
     data: object
 
+app = FastAPI()
+
+@app.post("/")
 # MICROSERVICE REQUEST HANDLING
 async def enrich(message: Message, request: Request):
     if (message.requestType == "numDonations"):
@@ -88,8 +95,17 @@ async def enrich(message: Message, request: Request):
         return {
             numRecieved
         }
+    elif (message.requestType == "locationIndex"):
+        tblName = "Stock"
+        locationIndex = message.data.locationIndex
+        condition = "locationIndex = \"" + locationIndex + "\""
+        locationStock = getValuesQuery(tblName, ["*"], condition)
+
+        return {
+            locationStock
+        }
     elif (message.requestType =="checkLogin"):
-        table_name = "auth"
+        table_name = "Auth"
         name = message.data.name
         passwd = message.data.password
         returnVal = "CASE WHEN Password = \"" + passwd + "\" THEN true ELSE false END"

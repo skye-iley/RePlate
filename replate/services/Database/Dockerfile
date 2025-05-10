@@ -16,6 +16,8 @@ RUN pip install asyncio
 
 RUN pip install sqlite3
 
+RUN pip install asynccontextmanager
+
 # runs the application using uvicorn
 # need to customize
 CMD ["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "3000"]
