@@ -1,0 +1,34 @@
+
+name: replate
+
+services:
+  
+  Database:
+    build:
+      context: ./Database
+    container_name: Database
+    ports:
+      - 3000:3000
+
+  UserStats:
+    build:
+      context: ./UserStats
+    container_name: UserStats
+    depends_on:
+      - Database
+
+  Inventory:
+    build:
+      context: ./Inventory
+    container_name: Inventory
+
+  Authorization:
+    build:
+      context: ./Authorization
+    container_name: Authorization
+
+  Location:
+    build:
+      context: ./Location
+    container_name: Location
+
