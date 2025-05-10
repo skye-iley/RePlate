@@ -6,7 +6,7 @@ interface location {
     businessType: string,
 }
 const placesList: location[] = [{
-    name: "lol",
+    name: "TestName",
     address: "place",
     businessType: "independent"
 }]
