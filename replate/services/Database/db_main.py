@@ -120,7 +120,22 @@ async def enrich(message: Message, request: Request):
         condition = "name = \"" + name + "\""
         ans = getValuesQuery(table_name, returnVal, condition)[0]
         return { ans }
+        # If the request type is "insert", insert the data
+    elif message.requestType == "insert":
+        table_name = message.data["tableName"]
+        values = message.data["values"]  # list of lists
+        insertRow(table_name, values)
+        con.commit()
+        return {"message": "Insert successful"}
 
+    # If the request type is "delete", delete the data
+    elif message.requestType == "delete":
+        table_name = message.data["tableName"]
+        condition = message.data["condition"]
+        deleteRow(table_name, condition)
+        con.commit()
+        return {"message": "Delete successful"}
+        
     # if the request type is invalid, we simply return None
     return None
     
